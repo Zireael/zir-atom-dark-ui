@@ -88,3 +88,13 @@ atom-text-editor::shadow {
     .color-guides(@total, (@i + 1));
   }
 }
+
+.datatip-overlay {
+  .datatip-container {
+    background:  darken(@app-background-color, 10%);
+    border: thin solid lighten(@app-background-color, 15%);
+  }
+  .datatip-marked-text-editor-container:hover {
+    background: darken(@app-background-color, 5%);
+  }
+}
