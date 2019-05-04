@@ -1,9 +1,6 @@
-# Atom Dark UI theme
+# Atom Dark UI theme mod by Zir
 
-A dark UI theme for Atom.
+A dark UI theme for Atom based on 'Atom Dark UI'.
+Suggested syntax highlighting: 'Seti'
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_UI Themes_ drop-down menu.
-
-![](https://f.cloud.github.com/assets/671378/2265086/c6897dba-9e7b-11e3-945d-551cac610717.png)
+![](https://user-images.githubusercontent.com/3856578/57178513-387f5080-6e69-11e9-85df-a42b82a5d79e.png)
