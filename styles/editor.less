@@ -2,9 +2,9 @@ atom-text-editor[mini] {
   color: @text-color-highlight;
   background-color: darken(@input-background-color, 5%);
   border: 1px solid @input-border-color;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border-radius: @component-border-radius;
-  padding-left: @component-padding/2;
+  padding-left: @component-padding / 2;
 
   .cursor {
     border-color: #fff;
@@ -38,7 +38,6 @@ atom-text-editor {
       box-shadow: -2px 0 10px 2px #222;
     }
   }
-
 }
 
 .editor .selection .region {
@@ -46,9 +45,9 @@ atom-text-editor {
 }
 
 atom-text-editor::shadow {
-
   .line-numbers {
-    background: darken(@app-background-color, 100%);
+    // background: darken(@app-background-color, 100%);
+    background-color: darken(@app-background-color, 13%);
     .line-number {
       color: inherit;
     }
@@ -58,14 +57,33 @@ atom-text-editor::shadow {
   .color-guides(@total, @i:1) when (@i <= @total) {
     .indent-guide-stack:nth-child(@{total}n + @{i}) {
       // @indent-col: rgba(mod(@i * 20 + 50, 125), mod(@i * 2 + 50, 125), mod(@i * 100 + 50, 25), 1);
-      background: repeating-linear-gradient(to bottom, rgba(158, 158, 158, 0.01), rgba(0, 0, 0, 0) 1px);
-      @indent-col: rgba(mod(@i * 20 + 50, 150), mod(@i * 2 + 50, 150), mod(@i * 100 + 50, 150), @i*0.045);
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(158, 158, 158, 0.01),
+        rgba(0, 0, 0, 0) 1px
+      );
+      @indent-col: rgba(
+        mod(@i * 20 + 50, 150),
+        mod(@i * 2 + 50, 150),
+        mod(@i * 100 + 50, 150),
+        @i*0.045
+      );
       box-shadow: inset 1px 0 @indent-col;
 
       &.indent-guide-active {
-        background: repeating-linear-gradient(to bottom, rgb(1, 162, 226), rgb(1, 162, 226) 100%);
+        background: repeating-linear-gradient(
+          to bottom,
+          rgb(1, 162, 226),
+          rgb(1, 162, 226) 100%
+        );
       }
-      background: repeating-linear-gradient(to bottom, rgba(158, 158, 158, 0.75), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(158, 158, 158, 0.75) 100%);
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(158, 158, 158, 0.75),
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(158, 158, 158, 0.75) 100%
+      );
     }
     .color-guides(@total, (@i + 1));
   }
