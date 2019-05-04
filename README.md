@@ -1,4 +1,4 @@
-# Atom Dark UI theme mod by Zir
+# Atom Dark UI theme - mod by Zir
 
 A dark UI theme for Atom based on 'Atom Dark UI'.
 Suggested syntax highlighting: 'Seti - Blue'
