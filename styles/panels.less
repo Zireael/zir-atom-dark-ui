@@ -34,11 +34,12 @@ atom-panel, .tool-panel {
 }
 
 .atom-dock-resize-handle.atom-dock-resize-handle-resizable {
+  margin-top: @tab-height * 1.3;
   background: darken(@inset-panel-background-color, 6%);
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.35) 70%,
-    fade(@tool-panel-border-color, 5%) 90%
+    darken(@inset-panel-background-color, 6%) 60%,
+    rgba(255, 255, 255, 0.15)
   );
 }
 
