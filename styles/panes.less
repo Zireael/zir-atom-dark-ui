@@ -1,0 +1,65 @@
+.pane-item {
+  .panel {
+    border-color: fadeout(@inset-panel-border-color, 30%);
+  }
+}
+
+.settings-view.pane-item > div {
+  background: darken(@app-background-color, 10%);
+
+  .package-card {
+    background-color: darken(@app-background-color, 5%);
+  }
+
+  select.form-control {
+    cursor: pointer;
+    background-color: darken(@app-background-color, 0%);
+
+    &:hover {
+      background-color: lighten(@app-background-color, 5%);
+    }
+
+    select option {
+      background-color: darken(@app-background-color, 0%);
+    }
+  }
+}
+
+atom-pane-container {
+  atom-pane {
+    background-color: lighten(@app-background-color, 4%);
+
+    &:focus {
+      background-color: @app-background-color;
+    }
+  }
+
+  atom-pane-axis.horizontal > * {
+    border-right: 1px solid @pane-item-border-color;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  atom-pane-axis.vertical > * {
+    border-bottom: 1px solid @pane-item-border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.workspace .status-bar {
+  background: darken(@app-background-color, 30%);
+}
+
+.project-find {
+  background: darken(@app-background-color, 10%);
+}
+
+.terminal-pane {
+  background: darken(@app-background-color, 12%);
+  color: @text-color-subtle;
+}
