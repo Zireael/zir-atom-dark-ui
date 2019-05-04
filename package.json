@@ -7,5 +7,17 @@
   "repository": "https://github.com/Zireael/zir-atom-dark-ui",
   "engines": {
     "atom": ">0.40.0"
+  },
+   "_disabled_configSchema": {
+    "UI Font size": {
+      "description": "Font size for UI elements",
+      "type": "integer",
+      "default": 12
+    },
+    "otherSetting": {
+      "description": "foo",
+      "type": "boolean",
+      "default": true
+    }
   }
 }

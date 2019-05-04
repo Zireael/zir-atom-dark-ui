@@ -1,0 +1,39 @@
+less:
+  type: 'object'
+  title: 'Less'
+  order: 1
+  properties:
+    enableUpload:
+      title: 'Upload related Less files'
+      type: 'boolean'
+      default: false
+    extensions:
+      title: 'Extensions of related Less files'
+      type: 'string'
+      default: '.css, .min.css'
+sass:
+  type: 'object'
+  title: 'Sass'
+  order: 2
+  properties:
+    enableUpload:
+      title: 'Upload related Sass files'
+      type: 'boolean'
+      default: false
+    extensions:
+      title: 'Extensions of related Sass files'
+      type: 'string'
+      default: '.css, .min.css'
+minifiedJavascript:
+  type: 'object'
+  title: 'Minified Javascript'
+  order: 3
+  properties:
+    enableUpload:
+      title: 'Upload related Javascript files'
+      type: 'boolean'
+      default: false
+    extensions:
+      title: 'Extensions of related Javascript files'
+      type: 'string'
+      default: '.min.js'
