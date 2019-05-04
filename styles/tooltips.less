@@ -1,6 +1,6 @@
 .tooltip {
-  @tip-background-color: #fff;
-  @tip-text-color: #333;
+  @tip-background-color: @tool-panel-background-color;
+  @tip-text-color: @text-color-highlight;
   white-space: nowrap;
 
   .keystroke {
@@ -13,12 +13,16 @@
   &.in { opacity: 1; }
 
   .tooltip-inner {
-    line-height: 19px;
+    font-size: @font-size * 1.25;
+    line-height: 1em;
     border-radius: @component-border-radius;
+    border: thin solid lighten(@text-color-info, 15%);
     background-color: @tip-background-color;
     color: @tip-text-color;
     white-space: nowrap;
     max-width: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 
   &.top .tooltip-arrow {
