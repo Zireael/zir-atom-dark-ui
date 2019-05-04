@@ -35,6 +35,12 @@ atom-panel, .tool-panel {
 
 .atom-dock-resize-handle.atom-dock-resize-handle-resizable {
   background: darken(@inset-panel-background-color, 6%);
+  background: linear-gradient(
+    to bottom,
+    fade(@tool-panel-border-color, 15%) 10%,
+    rgba(0, 0, 0, 0.5) 50%,
+    fade(@tool-panel-border-color, 5%) 90%
+  );
 }
 
 

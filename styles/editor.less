@@ -19,7 +19,7 @@ atom-text-editor[mini].is-focused {
   background-color: lighten(@input-background-color, 5%);
 
   .selection .region {
-    background-color: desaturate(@background-color-info, 50%);
+    background: desaturate(@background-color-info, 95%);
   }
 }
 // FIXME: these should go in syntax themes?
@@ -41,7 +41,7 @@ atom-text-editor {
 }
 
 .editor .selection .region {
-  // background-color: darken(fade(@hue-2, 5%), 10%);
+  background: darken(fade(@hue-2, 15%), 3%);
 }
 
 atom-text-editor::shadow {
