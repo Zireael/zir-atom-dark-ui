@@ -22,43 +22,43 @@
   .tab {
     position: relative;
     font-size: @tab-height * 0.6;
-    top: @tab-top-padding;
+    top: @tab-top-padding - 1px;
     max-width: @tab-max-width;
     height: @tab-height;
     line-height: @tab-height;
     padding: 0;
     margin: 0 20px 0 5px;
     color: @text-color;
-
-    transition: color .1s ease-in;
+    transition: color 0.1s ease-in;
     border: none;
 
-    &, &:before, &:after {
+    &,
+    &:after,
+    &:before {
       background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
       height: @tab-height;
     }
 
-    &:before, &:after {
+    &:after,
+    &:before {
       content: '';
       position: absolute;
-      top: 0px;
+      top: 0;
       width: 25px;
       height: @tab-height;
     }
-
     // left angled edge
     &:before {
       left: -14px;
       border-top-left-radius: @tab-radius;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0 4px rgba(0,0,0,.1);
       -webkit-transform: skewX(-@tab-skew);
     }
-
     // right angled edge
     &:after {
       right: -14px;
       border-top-right-radius: @tab-radius;
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
+      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0 4px rgba(0,0,0,.1);
       -webkit-transform: skewX(@tab-skew);
     }
 
@@ -94,24 +94,26 @@
     }
   }
 
-
   .tab.active {
     z-index: 1;
     color: @text-color-highlight;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+    border-bottom: 2px solid lighten(@text-color-info, 15%);
 
     .close-icon {
       line-height: @tab-height - 1px;
       color: @text-color;
     }
 
-    &, &:before, &:after {
+    &,
+    &:after,
+    &:before {
       background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 20%), @tab-background-color-active);
       height: @tab-height + 1px;
+      border-bottom: 2px solid lighten(@text-color-info, 15%);
       // &, .tab-bar {
-    // }
+      // }
     }
-
 
     &:before {
       box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
@@ -134,26 +136,29 @@
     }
   }
 
-  li ~ .tab.active {
-    &, &:before, &:after {
-      // background-color: lighten(, 10%)
-    border-bottom: 2px solid lighten(@text-color-info, 15%);
-  }}
+  // li ~ .tab.active,
+  // li.tab.sortable.active  {
+  //    &, &:before, &:after {
+  //      // background-color: lighten(, 10%)
+  //    border-bottom: 2px solid lighten(@text-color-info, 15%);
+  //  }}
 
   .placeholder {
     height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
     pointer-events: none;
+
     &:before {
       margin-left: -9px; // center between tabs
     }
+
     &:after {
       top: @tab-height + @tab-top-padding + @tab-bottom-border-height - 2px;
       margin-left: -10px; // center between tabs
     }
   }
 }
-
 // border
+
 .tab-bar + .item-views::before {
   content: "";
   position: absolute;
