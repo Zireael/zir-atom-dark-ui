@@ -1,14 +1,14 @@
 {
   "name": "zir-atom-dark-ui",
   "theme": "ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A dark UI theme for Atom mod by Zir",
   "license": "MIT",
   "repository": "https://github.com/Zireael/zir-atom-dark-ui",
   "engines": {
     "atom": ">0.40.0"
   },
-   "_disabled_configSchema": {
+  "_disabled_configSchema": {
     "UI Font size": {
       "description": "Font size for UI elements",
       "type": "integer",
