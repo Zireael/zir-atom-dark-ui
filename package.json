@@ -1,7 +1,7 @@
 {
   "name": "zir-atom-dark-ui",
   "theme": "ui",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A dark UI theme for Atom mod by Zir",
   "license": "MIT",
   "repository": "https://github.com/Zireael/zir-atom-dark-ui",
