@@ -13,10 +13,17 @@ atom-workspace {
 	}
 
 	::-webkit-scrollbar-corner,
-	::-webkit-scrollbar-track {
-		background: lighten(@scrollbar-background-color, 10%);
-		margin-top: 1px;
-		margin-bottom: 1px;
+	::-webkit-scrollbar-button,
+	::-webkit-scrollbar-track,
+	::-webkit-resizer  {
+		background: transparent;
+
+	}
+
+	::-webkit-scrollbar-track-piece {
+		background: fade(lighten(@scrollbar-background-color, 10%), 20%);
+		// margin-top: 1px;
+		// margin-bottom: 1px;
 	}
 
 	::-webkit-scrollbar-thumb {

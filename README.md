@@ -8,7 +8,6 @@ Suggested syntax highlighting theme: 'Seti (Blue or Steel theme)'
 Todo:
 * Looking for help with a .coffee to add options menu for user to choose UI font size, font family and colors
 * Terminal page: hide scrollbar track when scrollbar is not visible
-* Terminal page clips into vertical track
 * Tabs pane: theme scrollbar track corner (remains visible when scrollbar hidden)
 
 > Feedback welcome

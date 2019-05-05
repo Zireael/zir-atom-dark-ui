@@ -1,0 +1,9 @@
+.terminal-pane {
+  background: darken(@app-background-color, 12%);
+  color: @text-color-subtle;
+}
+
+// fix vertical scrollbar clipping
+div.terminal-pane  canvas {
+  padding-right: 1em;
+}
