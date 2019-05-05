@@ -1,9 +1,9 @@
 # Atom Dark UI theme - mod by Zir
 
 A dark UI theme for Atom based on 'Atom Dark UI'.
-Suggested syntax highlighting: 'Seti - Blue theme'
+Suggested syntax highlighting theme: 'Seti (Blue or Steel theme)'
 
-![](https://user-images.githubusercontent.com/3856578/57178513-387f5080-6e69-11e9-85df-a42b82a5d79e.png)
+![](https://user-images.githubusercontent.com/3856578/57190625-18f13200-6f14-11e9-9856-bc612a9dfb82.png)
 
 Todo:
 > Looking for help with a .coffee to add options menu for user to choose UI font size, font family and colors
